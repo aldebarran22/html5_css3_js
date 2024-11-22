@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+
+/* Estilos para la colocación de capas */
+
+
+
+#comunidades {
+	font-family: arial, tahoma, verdana;
+	font-size: 13px;
+	font-weight: bolder;	
+}
+
+#comunidades li {
+	list-style-type: none;
+	list-style-image: url("../imagen/iconos/bullet.gif");
+}
+
+
+#comunidades .sin_icono {
+	list-style-image: none;
+}

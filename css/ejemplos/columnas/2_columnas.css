@@ -1,0 +1,16 @@
+﻿#contenedor { margin:50px auto 0 auto; 	width:80%; border:1px solid black; }
+
+.contenedor2 { 	width:75%; margin: 10px auto 10px }
+
+
+.p_left { float:left; width: 45%; background-color: gray; color: white}
+
+.p_right { float: right; width: 45%; background-color: orange; color: white }
+
+.imagen { float: left}
+
+
+p { padding: 10px; text-align: justify }
+
+.clear {clear:both}
+

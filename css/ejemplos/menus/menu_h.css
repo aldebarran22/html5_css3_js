@@ -1,0 +1,38 @@
+@CHARSET "ISO-8859-1";
+
+/* MENU HORIZONTAL *********************************************************************/
+#menu_hor {
+	clear: both;
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+	list-style-type: none;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+#menu_hor li {
+	display: inline;
+	float: left;
+	border-left: 1px solid black;
+	width: 100px;
+}
+
+#menu_hor li a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+#menu_hor li a:link, #menu_hor li a:visited {
+	color: black;
+	background-color: orange;
+}
+
+#menu_hor li a:hover {
+	color: orange;
+	background-color: black;
+}
+/* FIN MENU HORIZONTAL *****************************************************************/
+

@@ -1,0 +1,35 @@
+#contenedor {
+	margin: 0px auto;
+	width: 80%;
+	text-align: center;
+}
+
+#cabecera {
+	height: 50px;
+	background: orange;
+}
+
+#centro {
+	background: #333333;
+}
+
+#contenido {
+	color: black;
+	float: left;
+	width: 60%;
+	text-align: justify;
+}
+
+#right {
+	float: right;
+	color: white;
+	background: #990000;
+	padding: 30px;
+	margin: 0px;
+}
+
+
+#pie {
+	clear: both;
+	background: orange;
+}

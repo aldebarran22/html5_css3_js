@@ -1,0 +1,128 @@
+@CHARSET "ISO-8859-1";
+
+/* Estilos para la colocación de capas */
+
+body {
+	background-position: center; 
+	background-image: url("../imagen/fotos/galeria/Desert.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: cover;
+}
+
+ul, h3 {
+	padding:0px;
+	margin:0px;
+}
+
+#contenedor {	
+	width: 85%;
+	margin: 10px auto;
+	text-align: center;
+	border: 1px solid #000000;
+	font-family: Tahoma;
+	background-color: white;
+	opacity: 0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+
+#cabecera {
+	height: 115px;
+	background-color: #7C7C7C;
+	padding:10px;
+	margin-bottom: 20px;
+}
+
+#cab_izq {
+	float: left;
+	padding: 10px;
+	text-align: left;
+	width: 25%;
+}
+
+#cab_izq img {
+	border-radius: 20px;
+	border: 2px solid black;
+}
+
+#cab_cen {
+	text-align: center;
+	float:left;
+	
+}
+
+#cab_der {
+	float: right;
+	padding: 30px;
+	width: 25%;
+}
+
+
+#izq {
+	float:left;
+	width: 30%;
+	text-align: left;
+	padding: 30px;
+}
+
+fieldset {
+	border-radius: 5px 15px 15px 5px;
+}
+
+#izq ul li {
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+#izq a {
+	text-decoration: none;
+	color: #555555;
+	display: block;
+	padding: 10px;
+}
+
+#izq a:HOVER {
+	background-color: #A1A1A1;
+	color: black;
+}
+
+
+#der {
+	float: right;
+	width: 60%;
+	padding-right: 25px;
+}
+
+#der p {
+	text-align: justify;
+}
+
+#der p::first-letter {
+	text-transform: capitalize;
+	font-size: 25px;	
+	font-weight: bolder;
+}
+
+.clear {
+	clear:both;
+}
+
+#pie {
+	background-color: #7C7C7C;
+	color: orange;
+	padding: 10px 0px;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 12px;
+
+}
+
+#der a, #pie a {
+	text-decoration: none;
+	color: #930000;
+	font-style: italic;
+}
+
+#der a:HOVER, #pie a:HOVER {
+	text-decoration: underline;
+}

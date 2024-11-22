@@ -1,0 +1,34 @@
+@CHARSET "ISO-8859-1";
+
+/* MENU VERTICAL ***********************************************************************/
+#menu_ver {
+	width: 100px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+	list-style-type: none;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+#menu_ver li {
+	border-bottom: 1px solid black;
+}
+
+#menu_ver li a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+	
+#menu_ver li a:link, #menu_ver li a:visited {	
+	color: #0000AA;
+	background-color: #CCCCCC;
+}
+
+#menu_ver li a:hover {
+	color: #CCCCCC;
+	background-color: #0000AA;
+}
+/* FIN DEL MENU VERTICAL ****************************************************************/
+

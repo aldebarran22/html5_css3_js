@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Datos del formulario</title>
+<script type="text/javascript">
+	
+	function validar(){
+		var p1, p2;
+		p1 = document.getElementById("pass").value;
+		p2 = document.getElementById("pass2").value;
+		
+		if (p1 != p2){
+			alert("Las contraseñas no coinciden ...");
+			return false;
+		} else
+			return true;
+	}
+	
+	function actualizar(){
+		var obj = document.getElementById("deslizador").value;		
+		document.getElementById('resul').value = obj;
+	}
+
+</script>
+</head>
+<body onload="actualizar()">
+	<h3>Introduzca datos</h3>
+	<form action="pagina.php" method="post" enctype="multipart/form-data" onsubmit="return validar()">
+		<fieldset>
+			<legend>Datos de registro</legend>
+		<progress id="progreso" value="5" max="10"></progress>
+		<table>
+			<tr>
+				<td>Coche</td>
+				<td>
+					<select>
+						<optgroup label="Swedish Cars">
+						<option value="volvo">Volvo</option>
+						<option value="saab">Saab</option>
+						</optgroup>
+						<optgroup label="German Cars">
+						<option value="mercedes">Mercedes</option>
+						<option value="audi">Audi</option>
+						</optgroup>
+					</select>
+				</td>			
+			</tr>
+			<tr>
+				<td>
+				Teléfono
+				<datalist id="info">
+					<option value="112">Emergencias</option>
+					<option value="091">Policía</option>
+					<option value="060">Ambulancias</option>
+				</datalist>
+				</td>
+				<td>
+					<input type="tel" name="tno" id="tno" list="info" />
+				</td>
+			</tr>
+			<tr>
+				<td>Matricula</td>
+				<td><input type="text" pattern="[0-9]{4}[A-Z]{3}" id="mat" name="mat" maxlength="7" />
+			</tr>
+			<tr>
+				<td>Buscador</td>
+				<td><input type="search" name="buscador"></td>
+			</tr>
+			<tr>
+				<td>Color preferido</td>
+				<td><input type="color" name="color" id="color" /></td>
+			</tr>
+			<tr>
+				<td><label for="nombre">Nombre de usuario</label></td>
+				<td><input type="text" id="nombre"  name="nombre" required="required" size="30" maxlength="10" autofocus="autofocus" /></td>
+			</tr>
+			<tr>
+				<td>Contraseña</td>
+				<td><input type="password" id="pass"  name="pass" required="required" size="30" maxlength="10" /></td>
+			</tr>
+			<tr>
+				<td>Repita contraseña</td>
+				<td><input type="password" id="pass2"  name="pass2" required="required" size="30" maxlength="10" /></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" id="mail" name="mail" required="required" multiple="multiple" /></td>
+			</tr>
+			<tr>
+				<td>Web</td>
+				<td><input style="background-color:orange;color:black" type="url" id="pagina" name="pagina" required="required" placeholder="http://" /></td>
+			</tr>
+			<tr>
+				<td>Teléfono</td>
+				<td><input type="tel" id="telefono" name="telefono" required="required" /></td>
+			</tr>
+			<tr>
+				<td>Fecha</td>
+				<td><input type="date" id="fecha" name="fecha" required="required" /></td>
+			</tr>
+			<tr>
+				<td>hora</td>
+				<td><input type="time" id="hora" name="hora" required="required" /></td>
+			</tr>
+			<tr>
+				<td>Rango</td>
+				<td>
+					<input type="range" id="deslizador" name="deslizador" min="1" max="100" step="1" onchange="actualizar()">
+					<input type="text" id="resul" size="3" disabled="disabled" />
+				</td>
+			</tr>
+			<tr>
+				<td>Número</td>
+				<td><input type="number" name="numero" id="numero" min="5" max="100" step="5" /></td>
+			</tr>
+			<tr>
+				<td valign="top">Estado civil</td>
+				<td>
+					<input type="radio" id="casado" name="estado_civil" value="1" />Casado<br />
+					<input type="radio" id="soltero" name="estado_civil" value="2" />Soltero<br />
+					<input type="radio" id="divorciado" name="estado_civil" value="3" />Divorciado
+				</td>
+			</tr>
+			<tr>
+				<td>País de procedencia</td>
+				<td>
+					<select name="pais" id="pais" required="required">
+						<option value=""></option>
+						<option value="AF">Afganistán</option>
+						<option value="AL">Albania</option>
+						<option value="DE">Alemania</option>
+						<option value="AD">Andorra</option>
+						<option value="AO">Angola</option>
+						<option value="AI">Anguilla</option>
+						<option value="AQ">Antártida</option>
+						<option value="AG">Antigua y Barbuda</option>
+						<option value="AN">Antillas Holandesas</option>
+						<option value="SA" selected="selected">Arabia Saudí</option>
+						<option value="DZ">Argelia</option>
+						<option value="AR">Argentina</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">Categorías</td>
+				<td>
+					<select name="categoria" id="categoria" required="required" size="5" multiple="multiple">
+						<option value="1">Música</option>
+						<option value="2">Deporte</option>
+						<option value="3">Viajes</option>
+						<option value="4">Cine</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Fichero adjunto</td>
+				<td><input type="file" name="fichero" required="required" /></td>			
+			</tr>	
+			<tr>
+				<td valign="top">Observaciones</td>
+				<td><textarea id="observaciones" name="observaciones" rows="5" cols="32">Escriba algún comentario</textarea>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="checkbox" id="publi" name="publi" value="1" checked="checked" disabled="disabled"  />
+					Recibir publicidad
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="checkbox" id="condiciones" name="condiciones" value="1" required="required" />
+					Acepto las condiciones de la empresa
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="Enviar" value="Enviar" /></td>
+				<td><input type="reset" name="Limpiar" value="Limpiar" /></td>
+			</tr>
+		</table>
+		</fieldset>
+	</form>
+</body>
+</html>

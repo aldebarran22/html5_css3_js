@@ -1,0 +1,3 @@
+#contenedor { margin:0 auto; width: 50%; border:1px solid red }
+#contenedor_hijo {margin: 20px auto; width:50%; border:1px solid black}
+#contenedor_hijo2 {margin: 40px auto; width:50%; border:1px solid blue}
