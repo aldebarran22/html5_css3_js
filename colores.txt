@@ -1,0 +1,8 @@
+colores en CSS
+
+- Palabra clave: orange, red, blue, green...
+- rgb(0..255, 0..255, 0..255)
+- Hexadecimal: #RR GG BB
+  #FFFFFF -> blanco
+  #000000 -> negro
+  #FF0000 -> rojo 

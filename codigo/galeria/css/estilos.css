@@ -1,0 +1,70 @@
+/* Hoja de estilos para los artículos */
+
+* {
+    font-family: Tahoma, Verdana;
+}
+
+#contenedor {
+    margin: 40px auto;
+    width: 85%;
+    text-align: center;
+    border: 2px solid rgb(150, 150, 150);
+    border-radius: 10px 20px 0px 0px;
+}
+
+header p,
+article p {
+    text-align: justify;
+    font-style: italic;
+    padding: 0px 20px;
+    /* top y bottom a 0px, left y right a 20px */
+}
+
+section {
+    padding: 20px;
+    /*Los 4 laterales a 20px*/
+    text-align: center;
+}
+
+article {
+    border: 1px solid red;
+    width: 25%;
+    float: left;
+    margin-right: 10px;
+    height: 350px;
+}
+
+div.clear {
+    clear: both;
+}
+
+h2 {
+    color: rgb(4, 22, 77)
+}
+
+h3 {
+    color: rgb(17, 77, 166);
+}
+
+/* Selecciona los párrafos que están dentro de los artículos */
+article p {
+    font-style: italic;
+    color: rgb(156, 185, 229);
+}
+
+/* selecciona todas las etiquetas que pertenecen a la clase de comentarios */
+/*
+.comentarios {
+    font-style: italic;
+} */
+
+/* Selecciona solo los enlaces de la clase comentarios */
+a.comentarios {
+    /* Le quitamos el subrayado en los 4 pseudo-selectores de los enlaces */
+    text-decoration: none;
+}
+
+a.comentarios:hover {
+    /* Cuando se aproxima el ratón se subraya */
+    text-decoration: underline;
+}

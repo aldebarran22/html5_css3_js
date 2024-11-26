@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("../img/fondo.gif") repeat scroll 0%;
+
+    /*
+    Con subpropiedades individuales:
+    background-image: url("../img/fondo.gif");
+    background-repeat: repeat;
+    */
+}
+
+/* Estilos del contenedor principal  */
+
+#contenedor {
+    border: 1px solid black;
+    /*width: 90%;*/
+    /* El 90% de la pantalla del navegador */
+    width: 700px;
+    /* Ancho fijo, al reducir la pantalla aparece scroll hori*/
+    margin: 40px auto;
+    text-align: center;
+    background-color: white;
+}
+
+nav.superior {
+    height: 60px;
+    background-color: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section {
+    width: 50%;
+    float: left;
+    /* se coloca a la izquierda */
+}
+
+aside {
+    width: 45%;
+    float: right;
+    /* Se coloca a la derecha */
+}
+
+footer {
+    clear: both;
+    /* Volvemos al modo de pintar los elementos block del navegador*/
+}
+
+
+/* Fin de estilos del contenedor principal  */
