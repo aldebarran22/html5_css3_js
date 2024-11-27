@@ -1,0 +1,21 @@
+form {
+    display: grid;
+    width: 400px;
+    grid-template-columns: 200px 200px;
+    grid-gap: 20px;
+    margin: 50px auto;
+}
+
+label {
+    grid-column: 1 / 2;
+}
+
+input {
+    grid-column: 2 / 3;
+    height: 30px;
+}
+
+button {
+    grid-column: 1 / 3;
+    height: 30px;
+}

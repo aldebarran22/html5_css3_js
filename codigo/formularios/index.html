@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Formularios</h1>
+        <p>Prueba con formularios de HTML5</p>
+        <h2>Autenticación</h2>
+        <form action="#" method="get">
+            <input type="hidden" name="clave_primaria" value="123">
+            <table>
+                <caption>Rellenar login y password</caption>
+                <tr>
+                    <td><label for="login">Login</label></td>
+                    <td><input type="text" id="login" class="campo_form" name="login" required
+                            placeholder="teclear login"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password" id="pass" class="campo_form" name="pass" required
+                            placeholder="teclear password">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pais">País</label></td>
+                    <td>
+                        <select name="pais" id="pais" class="campo_form">
+                            <option value="0">Seleccionar país ...</option>
+                            <option value="1">España</option>
+                            <option value="2">Alemania</option>
+                            <option value="3">Francia</option>
+                            <option value="4">Italia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="publicidad" id="publicidad" value="1" checked>
+                        <label for="publicidad">Recibir publicidad</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="estado_civil">Estado Civil</label></td>
+                    <td>
+                        <input type="radio" name="estado_civil" id="soltero" value="soltero">
+                        <label for="soltero">Soltero</label>
+
+                        <input type="radio" name="estado_civil" id="casado" value="casado">
+                        <label for="casado">Casado</label>
+
+                        <input type="radio" name="estado_civil" id="divorciado" value="divorciado">
+                        <label for="divorciado">Divorciado</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cv">CV (en pdf)</label></td>
+                    <td><input type="file" class="boton_form" name="fichero" id="fichero"
+                            placeholder="Seleccione fichero"></td>
+                </tr>
+                <tr>
+                    <td><label for="idiomas">Idiomas</label></td>
+                    <td>
+                        <select name="idiomas" id="idiomas" multiple="multiple" size="5">
+                            <option value="1">Español</option>
+                            <option value="2">Inglés</option>
+                            <option value="3">Francés</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="observaciones">Observaciones</label></td>
+                    <td><textarea class="campo_form" name="observaciones" id="observaciones" rows="6" cols="60"
+                            placeholder="Teclear 10 palabras"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Enviar" class="boton_form" name="enviar"></td>
+                    <td><input type="reset" value="Cancelar" class="boton_form" name="cancelar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

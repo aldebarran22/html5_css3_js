@@ -1,0 +1,65 @@
+
+form {
+    display: grid;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  form input {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+  form button {
+    background: lightgrey;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+  }
+  form button:hover {
+    background: gold;
+  }
+  
+  label {
+    padding: 5px 5px 5px 0;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  input:focus {
+    outline: 3px solid gold;
+  }
+
+  @media (min-width: 400px) {
+    form {
+      /* 2 cols: 
+      1) de 200px fija
+      2) el resto     
+      
+      Podemos poner: 2fr 1fr (dos partes la primera y una parte la segunda)
+      */  
+      grid-template-columns: 200px 1fr;
+
+      /*Separación entre columnas */
+      grid-gap: 16px;
+    }
+  
+    label {
+      text-align: right;
+      
+      /* de la 1 a la 2 ver img/image.png */
+      grid-column: 1 / 2;
+    }
+  
+    input,
+    button {
+      /* de la 2 a la 3 ver img/image.png */  
+      grid-column: 2 / 3;
+    }
+  }

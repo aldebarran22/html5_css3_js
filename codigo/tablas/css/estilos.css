@@ -1,0 +1,76 @@
+#contenedor {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.centrada {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.con_border {
+    border: 1px solid black;
+}
+
+.cab_color {
+    background-color: black;
+    color: white;
+}
+
+.con_border td {
+    border: 1px solid black;
+}
+
+.sep_30 {
+    margin-top: 30px;
+}
+
+.cab_unificada {
+    border-collapse: collapse;
+}
+
+.cab_unificada th {
+    background-color: black;
+    color: white;
+}
+
+.cab_unificada tr:nth-of-type(even) {
+    /* La fila par */
+    background-color: #f3fef3;
+
+}
+
+.cab_unificada tr:nth-of-type(odd) {
+    /* La fila impar */
+    background-color: #9CB9E5;
+}
+
+.texto_izq {
+    text-align: left;
+}
+
+.cab_unificada td:nth-child(n+2) {
+    text-align: right;
+}
+
+.ancha {
+    width: 90%;
+}
+
+/* De la última selecciona la última columna */
+/*
+.cab_unificada tr:last-child td:last-child {
+    font-weight: bolder;
+}*/
+
+/* la última fila */
+/*
+.cab_unificada tr:last-child {
+    font-weight: bolder;
+}*/
+
+/* La última columna de TODAS las filas */
+.cab_unificada td:last-child {
+    font-weight: bolder;
+}

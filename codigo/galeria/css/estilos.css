@@ -34,6 +34,10 @@ article {
     height: 350px;
 }
 
+article img {
+    border-radius: 100%;
+}
+
 div.clear {
     clear: both;
 }
